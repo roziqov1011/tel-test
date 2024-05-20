@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS Example</title>
+</head>
+<body>
+    <button id="smsButton">Send SMS</button>
+
+    <script>
+        document.getElementById('smsButton').addEventListener('click', function() {
+            // Telefon raqamiga SMS yuborish uchun
+            window.location.href = 'sms:+998902060690?body=Hello%20World';
+        });
+    </script>
+</body>
+</html>
